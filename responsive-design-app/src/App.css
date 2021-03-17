@@ -1,0 +1,45 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding: 20px;
+}
+
+.menu-button {
+  width: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  width: 10px;
+  height: 2px;
+  margin: 1px;
+  background-color: black;
+}
+
+.closed {
+  display: none;
+}
+
+body {
+  background: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
