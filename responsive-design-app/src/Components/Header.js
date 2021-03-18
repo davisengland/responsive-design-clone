@@ -20,7 +20,7 @@ export default class Header extends Component {
         return(
             <div className='header-menu'>
                 <header>
-                    <h1>Start Bootstrap</h1>
+                    <h1 className='title'>Start Bootstrap</h1>
                     <button className='menu-button' onClick={() => this.showMenu()}>
                         <h2>Menu</h2>
                         <div className='menu-icon'>
@@ -30,7 +30,7 @@ export default class Header extends Component {
                         </div>
                     </button>
                 </header>
-                <ul className={this.state.menu === 'closed' ? 'closed' : ''}>
+                <ul className={this.state.menu === 'closed' ? 'closed' : 'open'}>
                     <li>About</li>
                     <li>Projects</li>
                     <li>Contact</li>

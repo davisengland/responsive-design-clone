@@ -1,16 +1,26 @@
 .App {
   width: 100vw;
   height: 100vh;
+  background: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg) no-repeat center center fixed; 
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
 header {
   width: 100%;
-  height: 40px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: grey;
-  padding: 20px;
+  background-color: white;
+  position: relative;
+}
+
+.title {
+  margin-left: 20px;
+  font-size: 25px;
 }
 
 .menu-button {
@@ -18,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
 }
 
 .menu-icon {
@@ -32,14 +43,48 @@ header {
   background-color: black;
 }
 
-.closed {
-  display: none;
+@keyframes slide-up {
+  0% {
+    transform: translate(0)
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
 }
 
-body {
-  background: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.closed {
+  display: none;
+  animation-name: slide-up;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translate(0, -100%)
+  }
+  100% {
+    transform: translate(0)
+  }
+}
+
+.open {
+  background-color: white;
+  position: relative;
+  animation-name: slide-down;
+  animation-duration: 0.5s;
+}
+
+li {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+@media (min-width: 991px) {
+  header {
+    background-color: none;
+  }
+
+  .menu-button {
+    display: none;
+  }
 }
