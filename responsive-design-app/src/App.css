@@ -1,7 +1,7 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg) no-repeat center center fixed; 
+  background: url(https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg) no-repeat center center fixed;
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -79,12 +79,40 @@ li {
   margin-left: 20px;
 }
 
+.horizontal-menu {
+  display: none;
+}
+
 @media (min-width: 991px) {
+  .header-menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
   header {
-    background-color: none;
+    background-color: rgba(255,255,255,0);
   }
 
   .menu-button {
     display: none;
+  }
+
+  ul {
+    width: 500px;
+    height: 60px;
+    display: flex;
+  }
+
+  .horizontal-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-left: 40px;
   }
 }

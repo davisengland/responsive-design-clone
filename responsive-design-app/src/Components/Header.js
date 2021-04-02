@@ -35,6 +35,11 @@ export default class Header extends Component {
                     <li>Projects</li>
                     <li>Contact</li>
                 </ul>
+                <ul className='horizontal-menu'>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
             </div>
         )
     }
